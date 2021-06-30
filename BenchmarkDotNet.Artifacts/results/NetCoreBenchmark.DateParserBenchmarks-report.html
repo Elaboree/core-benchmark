@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>NetCoreBenchmark.DateParserBenchmarks-20210630-152020</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.0, OS=Windows 10.0.18363.1256 (1909/November2019Update/19H2)
+Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
+.NET SDK=5.0.301
+  [Host]     : .NET 5.0.7 (5.0.721.25508), X64 RyuJIT
+  DefaultJob : .NET 5.0.7 (5.0.721.25508), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>        Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Ratio</th><th>Rank</th><th>Gen 0</th><th>Gen 1</th><th>Gen 2</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>GetYearFromSpan</td><td>38.19 ns</td><td>0.811 ns</td><td>1.239 ns</td><td>0.07</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td>
+</tr><tr><td>GetYearFromSubstring</td><td>51.58 ns</td><td>1.028 ns</td><td>1.718 ns</td><td>0.10</td><td>2</td><td>0.0076</td><td>-</td><td>-</td><td>32 B</td>
+</tr><tr><td>GetYearFromSplit</td><td>176.05 ns</td><td>3.406 ns</td><td>5.596 ns</td><td>0.33</td><td>3</td><td>0.0381</td><td>-</td><td>-</td><td>160 B</td>
+</tr><tr><td>GetYearFromDateTime</td><td>539.69 ns</td><td>10.567 ns</td><td>17.064 ns</td><td>1.00</td><td>4</td><td>-</td><td>-</td><td>-</td><td>-</td>
+</tr></tbody></table>
+</body>
+</html>
