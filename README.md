@@ -1,4 +1,4 @@
-# NetCoreBenchmark
+# core-benchmark
 
 A Sample project using BenchmarkDotNet for compare operations in .NetCore 
 
