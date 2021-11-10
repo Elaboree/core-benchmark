@@ -1,6 +1,6 @@
 # NetCoreBenchmark
 
-I tried to do some benchmark compare using BenchmarkDotNet enjoy it 
+A Sample project using BenchmarkDotNet for compare operations in .NetCore 
 
 ![benchmark](https://github.com/Elaboree/NetCoreBenchmark/blob/1d2884a89d6d61a7e70db1cf0c32de978c6a1c3b/NetCoreBenchmark/Benchmark.JPG)
 
